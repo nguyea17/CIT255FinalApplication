@@ -1,0 +1,30 @@
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication\CIT255FinalApplication\bin\Debug\CIT255FinalApplication.exe.config
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication\CIT255FinalApplication\obj\Debug\CIT255FinalApplication.csprojResolveAssemblyReference.cache
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication\CIT255FinalApplication\bin\Debug\Data\Data.txt
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication\CIT255FinalApplication\bin\Debug\CIT255FinalApplication.exe
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication\CIT255FinalApplication\bin\Debug\CIT255FinalApplication.pdb
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication\CIT255FinalApplication\obj\Debug\CIT255FinalApplication.exe
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication\CIT255FinalApplication\obj\Debug\CIT255FinalApplication.pdb
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication - Copy\CIT255FinalApplication\bin\Debug\CIT255FinalApplication.exe.config
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication - Copy\CIT255FinalApplication\obj\Debug\CIT255FinalApplication.exe
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication - Copy\CIT255FinalApplication\obj\Debug\CIT255FinalApplication.pdb
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication - Copy\CIT255FinalApplication\bin\Debug\Data\Data.txt
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication - Copy\CIT255FinalApplication\bin\Debug\CIT255FinalApplication.exe
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication - Copy\CIT255FinalApplication\bin\Debug\CIT255FinalApplication.pdb
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication - Copy\CIT255FinalApplication\obj\Debug\CIT255FinalApplication.csprojResolveAssemblyReference.cache
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication - Copy - Copy\CIT255FinalApplication\bin\Debug\CIT255FinalApplication.exe.config
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication - Copy - Copy\CIT255FinalApplication\obj\Debug\CIT255FinalApplication.exe
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication - Copy - Copy\CIT255FinalApplication\obj\Debug\CIT255FinalApplication.pdb
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication - Copy - Copy\CIT255FinalApplication\bin\Debug\Data\Data.txt
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication - Copy - Copy\CIT255FinalApplication\bin\Debug\CIT255FinalApplication.exe
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication - Copy - Copy\CIT255FinalApplication\bin\Debug\CIT255FinalApplication.pdb
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication - Copy - Copy\CIT255FinalApplication\obj\Debug\CIT255FinalApplication.csprojResolveAssemblyReference.cache
+C:\Users\Austin Nguyen\Desktop\CIT255_GitHub\CIT255FinalApplication - Copy - Copy\CIT255FinalApplication\bin\Debug\Data\Data.xml
+C:\Users\Austin Nguyen\Desktop\CIT255FinalApplication\CIT255FinalApplication\bin\Debug\CIT255FinalApplication.exe.config
+C:\Users\Austin Nguyen\Desktop\CIT255FinalApplication\CIT255FinalApplication\obj\Debug\CIT255FinalApplication.exe
+C:\Users\Austin Nguyen\Desktop\CIT255FinalApplication\CIT255FinalApplication\obj\Debug\CIT255FinalApplication.pdb
+C:\Users\Austin Nguyen\Desktop\CIT255FinalApplication\CIT255FinalApplication\bin\Debug\Data\Data.txt
+C:\Users\Austin Nguyen\Desktop\CIT255FinalApplication\CIT255FinalApplication\bin\Debug\Data\Data.xml
+C:\Users\Austin Nguyen\Desktop\CIT255FinalApplication\CIT255FinalApplication\bin\Debug\CIT255FinalApplication.exe
+C:\Users\Austin Nguyen\Desktop\CIT255FinalApplication\CIT255FinalApplication\bin\Debug\CIT255FinalApplication.pdb
+C:\Users\Austin Nguyen\Desktop\CIT255FinalApplication\CIT255FinalApplication\obj\Debug\CIT255FinalApplication.csprojResolveAssemblyReference.cache
