@@ -74,7 +74,10 @@ namespace CIT255FinalApplication
                         case AppEnum.ManagerAction.QueryProductNamesByPrice:
                         QueryProductNameByPrice();
                             break;
-                        case AppEnum.ManagerAction.Quit:
+                    case AppEnum.ManagerAction.QueryProductByLocation:
+                        QueryProductByLocation();
+                        break;
+                    case AppEnum.ManagerAction.Quit:
                             active = false;
                             break;
                         default:
@@ -105,6 +108,26 @@ namespace CIT255FinalApplication
             ConsoleView.DisplayQueryResults(matchingProductNames);
             ConsoleView.DisplayContinuePrompt();
         }
+        /// <summary>
+        /// query by location
+        /// </summary>
+        private static void QueryProductByLocation()
+        {
+            ProductNameBusiness productNameBusiness = new ProductNameBusiness(productListRepository);
+
+            List<ProductName> matchingProductByLocation;
+            int findLocation;
+            ConsoleView.QueryByLocation(out findLocation);
+            using (productNameBusiness)
+            {
+
+                matchingProductByLocation = productNameBusiness.QueryByLocation(findLocation);
+            }
+
+            ConsoleView.DisplayQueryResults(matchingProductByLocation);
+            ConsoleView.DisplayContinuePrompt();
+
+        }
 
         private static void UpdateProductName()
         {
@@ -128,9 +151,11 @@ namespace CIT255FinalApplication
         {
             ProductNameBusiness productNameBusiness = new ProductNameBusiness(productListRepository);
 
-            ProductName productName;
+            ProductName productName = new ProductName();
 
             productName = ConsoleView.AddProductName();
+            productName.ID = ConsoleView.IncrementProductId(productNameBusiness.SelectAll());
+
             using (productNameBusiness)
             {
                 productNameBusiness.Insert(productName);

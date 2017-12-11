@@ -46,6 +46,17 @@ namespace CIT255FinalApplication
 
             return productNames.Where(pn => pn.Price >= minimumPrice && pn.Price <= maxPrice).ToList();
         }
+        /// <summary>
+        /// use Linq and Lambra to find matching location
+        /// </summary>
+        /// <param name="location"></param>
+        /// <returns></returns>
+        public List<ProductName> QueryByLocation(int location)
+        {
+            List<ProductName> productLocation = _productListRepository.SelectAll();
+
+            return productLocation.Where(local => local.Location == location).ToList();
+        }
         public void Dispose()
         {
             _productListRepository = null;

@@ -57,6 +57,7 @@ namespace CIT255FinalApplication
                 leftTab + "4. Add a Product" + Environment.NewLine +
                 leftTab + "5. Update a Product" + Environment.NewLine +
                 leftTab + "6. Query a Product by Price" + Environment.NewLine +
+                leftTab + "7. Query a Product by Location" + Environment.NewLine +
                 leftTab + "E. Exit" + Environment.NewLine);
 
             DisplayMessage("");
@@ -82,6 +83,9 @@ namespace CIT255FinalApplication
                     break; ;
                 case '6':
                     userActionChoice = AppEnum.ManagerAction.QueryProductNamesByPrice;
+                    break;
+                case '7':
+                    userActionChoice = AppEnum.ManagerAction.QueryProductByLocation;
                     break;
                 case 'E':
                 case 'e':
@@ -180,17 +184,29 @@ namespace CIT255FinalApplication
             Console.WriteLine(ConsoleUtil.Center("Add a Product to the List", WINDOW_WIDTH));
             DisplayMessage("");
 
-            DisplayPromptMessage("Enter the product ID: ");
-            productName.ID = ConsoleUtil.ValidateIntegerResponse("Please enter new product ID: ", Console.ReadLine());
-            DisplayMessage("");
-
             DisplayPromptMessage("Enter the product name: ");
             productName.Name = Console.ReadLine();
+            DisplayMessage("");
+            while (productName.Name == "")
+            {
+                DisplayMessage("");
+                DisplayPromptMessage("Enter the product name again: ");               
+                productName.Name = Console.ReadLine();
+                DisplayMessage("");
+            }
             DisplayMessage("");
 
             DisplayPromptMessage("Enter the product's price: ");
             productName.Price = Convert.ToDouble(Console.ReadLine());
             DisplayMessage("");
+            while (productName.Price < 0)
+            {
+                DisplayMessage(" ");
+                DisplayPromptMessage("Please enter a positive number for price: ");
+                DisplayMessage(" ");
+                productName.Price = Convert.ToDouble(Console.ReadLine());
+                DisplayMessage("");
+            }           
 
             DisplayPromptMessage("Enter the product's location: ");
             productName.Location = ConsoleUtil.ValidateIntegerResponse("Please type a number for the product's location: ", Console.ReadLine());
@@ -272,6 +288,37 @@ namespace CIT255FinalApplication
             return productName;
         }
         /// <summary>
+        /// query a product by Location
+        /// </summary>
+        /// <param name="location"></param>
+        public static void QueryByLocation(out int location)
+        {
+            location = 0;
+            string userResponse = "";
+
+            DisplayReset();
+
+            DisplayMessage("");
+            Console.WriteLine(ConsoleUtil.Center("Query a Product by Location", WINDOW_WIDTH));
+            DisplayMessage("");
+
+            DisplayPromptMessage("Enter the location: ");
+            userResponse = Console.ReadLine();
+            if (userResponse != "")
+            {
+                location = ConsoleUtil.ValidateIntegerResponse("Please enter the location you want to find a product. ", userResponse);
+
+            }
+
+            DisplayMessage("");
+            DisplayMessage(String.Format("You have entered {0} as the location to find a product ", location));
+            DisplayMessage("");
+
+            DisplayContinuePrompt();
+
+
+        }
+        /// <summary>
         /// method to query a product based on the min and max price
         /// </summary>
         /// <param name="minimumPrice"></param>
@@ -330,6 +377,7 @@ namespace CIT255FinalApplication
 
             columnHeader.Append("ID".PadRight(8));
             columnHeader.Append("Product Name".PadRight(25));
+            columnHeader.Append("$ Price".PadRight(15));
             columnHeader.Append("Location".PadRight(15));
 
             DisplayMessage(columnHeader.ToString());
@@ -340,6 +388,7 @@ namespace CIT255FinalApplication
 
                 productNameInfo.Append(productName.ID.ToString().PadRight(8));
                 productNameInfo.Append(productName.Name.PadRight(25));
+                productNameInfo.Append(productName.Price.ToString().PadRight(15));
                 productNameInfo.Append(productName.Location.ToString().PadLeft(4));
 
                 DisplayMessage(productNameInfo.ToString());
@@ -474,6 +523,20 @@ namespace CIT255FinalApplication
             }
 
             Console.Write(messageLines[messageLines.Count() - 1]);
+        }
+        /// <summary>
+        /// automatically assign new ID when a product adds to the list
+        /// </summary>
+        /// <param name="checkDuplicateId"></param>
+        /// <returns></returns>
+        public static int IncrementProductId(List<ProductName> checkDuplicateId)
+        {
+            ProductName lastProduct = checkDuplicateId[checkDuplicateId.Count - 1];
+
+            int ID = lastProduct.ID;
+
+            return ID += 1;
+
         }
         #endregion
     }

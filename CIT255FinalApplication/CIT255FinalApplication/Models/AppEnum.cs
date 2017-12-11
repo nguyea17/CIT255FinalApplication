@@ -17,6 +17,7 @@ namespace CIT255FinalApplication
             AddProductName,
             UpdateProductName,
             QueryProductNamesByPrice,
+            QueryProductByLocation,
             Quit,
         }
     }
